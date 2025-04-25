@@ -1,0 +1,61 @@
+// ***** POLICES *****
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-VariableFont_opsz\wght.ttf);
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url(../fonts/Merriweather-VariableFont_opsz\wdth\wght.ttf);
+}
+
+// ***** VARIABLES *****
+$white: #f2f3f3;
+$white-hover: #efefefe8;
+$black: #050505;
+$grey1: #efefefe8;
+$grey2: #e9e9e9;
+$transparent: #f3eeee35;
+$infos: rgba(90, 90, 90, 0.753);
+
+// ***** MIXINS *****
+@mixin InterExtraBold {
+  font-family: Inter;
+  font-weight: 800;
+}
+@mixin MerriweatherLight {
+  font-family: Merriweather;
+  font-weight: 300;
+}
+@mixin centerChild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// ***** PREREGLAGES *****
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: transparent;
+  outline: none;
+}
+body {
+  min-height: 100vh;
+  background: url(../images/bg.webp) center/cover fixed;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: $white;
+}
+label {
+  @include InterExtraBold;
+  text-transform: uppercase;
+  color: $infos;
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+  cursor: pointer;
+}

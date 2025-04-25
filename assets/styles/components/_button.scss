@@ -1,0 +1,23 @@
+#button {
+  display: flex;
+  padding: 10px 20px;
+  border: 2px solid $black;
+  transition: 0.3s ease;
+  &:hover {
+    background: $black;
+    a {
+      color: $white;
+    }
+  }
+  a {
+    color: $black;
+    text-transform: uppercase;
+    @include InterExtraBold;
+    letter-spacing: 1px;
+    font-size: min(
+      max(0.7rem, calc(0.7rem + ((1vw - 0.2rem) * 0.1818))),
+      0.8rem
+    );
+    min-height: 0vw;
+  }
+}
