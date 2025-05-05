@@ -1,61 +1,48 @@
-// ***** POLICES *****
+/* -------------------------------------------------------------------------- */
+/*                        Réglages de base et généraux                        */
+/* -------------------------------------------------------------------------- */
+
+/* ---------------------------- Import des fonts ---------------------------- */
 @font-face {
-  font-family: "Inter";
-  src: url(../fonts/Inter-VariableFont_opsz\wght.ttf);
-}
-@font-face {
-  font-family: "Merriweather";
-  src: url(../fonts/Merriweather-VariableFont_opsz\wdth\wght.ttf);
+  font-family: "Nom-police";
+  src: url(../chemin/vers/la/font.ttf);
+  font-display: swap; //Pour éviter les décalages de mise en page
 }
 
-// ***** VARIABLES *****
-$white: #f2f3f3;
-$white-hover: #efefefe8;
-$black: #050505;
-$grey1: #efefefe8;
-$grey2: #e9e9e9;
-$transparent: #f3eeee35;
-$infos: rgba(90, 90, 90, 0.753);
+/* --------------------------- Variables et mixins -------------------------- */
+//1 Variables
+$font: "Nom-police", serif;
+$white: white;
+$black: black;
 
-// ***** MIXINS *****
-@mixin InterExtraBold {
-  font-family: Inter;
-  font-weight: 800;
-}
-@mixin MerriweatherLight {
-  font-family: Merriweather;
-  font-weight: 300;
-}
+//1 Mixins
 @mixin centerChild {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-// ***** PREREGLAGES *****
+/* ---------------------------- Réglages généraux --------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: transparent;
-  outline: none;
 }
 body {
-  min-height: 100vh;
-  background: url(../images/bg.webp) center/cover fixed;
+  width: 100dvw;
+  min-height: 100dvh;
+  background: red;
+  overflow: hidden;
 }
 li {
-  list-style-type: none;
+  list-style: none;
 }
-a {
+a,
+a:visited {
+  color: $black;
   text-decoration: none;
-  color: $white;
 }
-label {
-  @include InterExtraBold;
-  text-transform: uppercase;
-  color: $infos;
-  font-size: 0.8rem;
-  padding-bottom: 10px;
-  cursor: pointer;
-}
+
+/* -------------------------------------------------------------------------- */
+/*                      Réglages size : fluid responsive                      */
+/* -------------------------------------------------------------------------- */

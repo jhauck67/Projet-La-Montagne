@@ -3,185 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La Montagne : Profitez d'un grand bol d'air frais</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/images/favicon.ico"
-      type="image/x-icon"
-    />
+
+    <!-- ------------- Titre, Meta Description, Favicon et Auteur -------------- -->
+
+    <!--1 Titre de l'onglet (entre 50 et 60 caractères) -->
+    <title>
+      <!--todo: Le titre de la page doit comporter entre 50 et 60 caractères-->
+    </title>
+
+    <!-- 1 Meta description -->
     <meta
       name="description"
-      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae expedita perferendis fugiat iusto quibusdam, molestiae illo unde asperiores, modi placeat alias quae quam ipsum. Voluptatum impedit atque maiores. Corrupti, eius. Voluptas nemo voluptates beatae saepe, libero repellat quaerat laudantium quis nobis magnam aliquid non dolorem ipsam assumenda cupiditate pariatur dolores?"
+      content="<!--todo: La description de la page doit comporter entre 150 et 160 caractères -->"
+    />
+
+    <!-- 1 Les favicons -->
+    <!-- favicon au format ICO -->
+    <link rel="icon" type="image/x-icon" href="<!--todo: favicon.ico-->" />
+    <!-- favicon au format SVG -->
+    <link rel="icon" type="image/svg+xml" href="<!--todo: favicon.svg-->" />
+    <!-- favicon au format PNG -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="<!--todo: favicon.png-->"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="<!--todo: favicon.png-->"
     />
-    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <!-- icone pour Apple Touch -->
+    <link
+      rel="apple-touh-icon"
+      sizes="180x180"
+      href="<!--todo: apple-touch-icon.png-->"
+    />
+
+    <!-- 1 Auteur -->
+    <meta name="author" content="Jhauck67" />
+
+    <!-- ------------------------- Facebook Meta Tags -------------------------- -->
+    <!--todo: Coller les meta-tags générés à partir de opengraph.xyz-->
+
+    <!-- ------------------------ Feuille de style CSS ------------------------- -->
+    <link rel="preload" href="<!--todo index.css-->" as="style" />
+    <!-- permet de précharger la feuille de style css -->
+    <link rel="stylesheet" href="<!--todo index.css-->" />
+    <!-- feuille de style CSS -->
+
+    <!-- --------------------------- Preload des images --------------------------- -->
+    <!-- permet de précharger les images importantes -->
+    <!--todo <link rel="preload" href="./chemin/vers/imges.webp" as="image" type="image/webp"/>-->
   </head>
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                             DEBUT DE LA PAGE                            -->
+  <!-- ----------------------------------------------------------------------- -->
   <body>
-    <!-- ***** HEADER ***** -->
-    <header>
-      <div class="header-container">
-        <h1>La montagne <br />ça vous gagne</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. A hic
-          mollitia ad quibusdam, quidem et.
-        </p>
-        <div id="arrow">
-          <i class="fa-solid fa-arrow-down"></i>
-        </div>
-      </div>
-    </header>
-
-    <!-- ***** NAVBAR ***** -->
-    <nav>
-      <div class="navbar">
-        <div class="navbar-left">
-          <ul>
-            <li><a href="#">This is massively</a></li>
-            <li><a href="#">generic page</a></li>
-            <li><a href="#">elements reference</a></li>
-          </ul>
-        </div>
-        <div class="navbar-right">
-          <ul>
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-facebook-f"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-github"></i></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- ***** SECTION 1 ***** -->
-    <section>
-      <div class="section1">
-        <div class="section1-header">
-          <div class="date">April 25, 2017</div>
-        </div>
-        <div class="section1-title">
-          <h2>And this is a massive headline</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-            minima qui ullam, pariatur dolorem, voluptate aut similique sapiente
-            sunt nam earum sit. Amet tempore maxime tenetur et doloremque quidem
-            esse.
-          </p>
-        </div>
-        <div class="section1-img">
-          <img
-            src="./assets/images/pic01.webp"
-            alt="homme qui saute d'un rocher à l'autre dans des montagnes arides"
-          />
-        </div>
-        <div class="section1-footer">
-          <div id="button">
-            <a href="#">Full story</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** SECTION 2 ***** -->
-    <section>
-      <div class="section2">
-        <div class="s2-card">
-          <div class="date">April 24, 2017</div>
-          <h3>Sed magna ipsum faucibus</h3>
-          <div class="img">
-            <img
-              src="./assets/images/pic02.webp"
-              alt="vue d'un coucher de soleil sur des montagnes pleine de verdure"
-            />
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum,
-            consectetur voluptas. Quisquam necessitatibus dolorum, debitis
-            adipisci.
-          </p>
-          <div class="s2-btn-container">
-            <div id="button"><a href="#">Full Story</a></div>
-          </div>
-        </div>
-        <div class="s2-card">
-          <div class="date">April 22, 2017</div>
-          <h3>Primis eget imperdiet lorem</h3>
-          <div class="img">
-            <img
-              src="./assets/images/pic03.webp"
-              alt="vue d'un coucher de soleil sur un plateau montagneux"
-            />
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-            veritatis provident asperiores optio aliquam vero aut accusamus
-            ullam sequi.
-          </p>
-          <div class="s2-btn-container">
-            <div id="button"><a href="#">Full Story</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** FOOTER ***** -->
-    <footer>
-      <div class="footer-container">
-        <form action="">
-          <div class="name-container">
-            <label for="name">name</label>
-            <input type="text" id="name" />
-          </div>
-          <div class="email-container">
-            <label for="email">email</label>
-            <input type="text" id="email" />
-          </div>
-          <div class="message-container">
-            <label for="message">message</label>
-            <textarea id="message"></textarea>
-          </div>
-          <div class="submit-container">
-            <input type="submit" id="button" value="Send message" />
-          </div>
-        </form>
-        <div class="infos">
-          <div class="address-container border">
-            <label>address</label>
-            <div class="address">
-              <p>1234 Somewhere Road #87257</p>
-              <p>Nashville, TN 00000-0000</p>
-            </div>
-          </div>
-          <div class="phone-container border">
-            <label>phone</label>
-            <div class="phone">
-              <p>(000)000-0000</p>
-            </div>
-          </div>
-          <div class="mail-container border">
-            <label>email</label>
-            <div class="mail">
-              <p>info@untitled.ltd</p>
-            </div>
-          </div>
-          <div class="social-container border">
-            <label>social</label>
-            <div class="social">
-              <ul>
-                <li><i class="fa-brands fa-twitter"></i></li>
-                <li><i class="fa-brands fa-facebook-f"></i></li>
-                <li><i class="fa-brands fa-instagram"></i></li>
-                <li><i class="fa-brands fa-github"></i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <nav></nav>
+    <header></header>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
+<!-- ----------------------------------------------------------------------- -->
+<!--                             FIN DE LA PAGE                              -->
+<!-- ----------------------------------------------------------------------- -->
