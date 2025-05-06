@@ -1,0 +1,25 @@
+header {
+  position: relative !important;
+  @include maxWidth;
+  height: 100vh;
+  .header-text {
+    height: 100%;
+    @include centerChild;
+    .text-container {
+      text-align: center;
+      color: $white;
+      h1 {
+        font-family: $title;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 2px;
+      }
+      p {
+        font-family: $text;
+        font-style: italic;
+        line-height: 20px;
+        margin: 30px 0 50px;
+      }
+    }
+  }
+}

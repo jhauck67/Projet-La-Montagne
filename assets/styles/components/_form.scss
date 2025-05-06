@@ -1,0 +1,44 @@
+form {
+  padding: 50px 0 30px;
+  div:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px auto;
+  }
+  input#name,
+  input#email,
+  textarea {
+    background: transparent;
+    outline: none;
+    border: 1px solid $grey4;
+    margin: 15px 0 20px;
+    &:hover {
+      border: 1px solid $grey3;
+    }
+    &:focus {
+      border: 2px solid $grey3;
+    }
+  }
+  input#name,
+  input#email {
+    height: 30px;
+  }
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+  div:last-child {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    .button {
+      border-color: $grey3;
+      background: transparent;
+      color: $grey3;
+      &:hover {
+        background: $white-hover;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  a {
+    border: 1px solid $white;
+    border-radius: 20px;
+    @include centerChild;
+    height: 100%;
+    fill: $white;
+    transition: 0.3s ease;
+    &:hover {
+      background: $white-hover;
+      fill: $black;
+      transform: scale(1.2);
+    }
+  }
+}

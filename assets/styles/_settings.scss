@@ -4,22 +4,40 @@
 
 /* ---------------------------- Import des fonts ---------------------------- */
 @font-face {
-  font-family: "Nom-police";
-  src: url(../chemin/vers/la/font.ttf);
+  font-family: "Inter";
+  src: url(../fonts/Inter-VariableFont_opsz\wght.ttf);
+  font-display: swap; //Pour éviter les décalages de mise en page
+}
+@font-face {
+  font-family: "Merri";
+  src: url(../fonts/Merriweather_Light.ttf);
   font-display: swap; //Pour éviter les décalages de mise en page
 }
 
 /* --------------------------- Variables et mixins -------------------------- */
 //1 Variables
-$font: "Nom-police", serif;
+$title: "Inter", cursive;
+$text: "Merri", cursive;
 $white: white;
+$white-hover: #ffffff8f;
+$transparent: #ffffff4d;
 $black: black;
+$grey1: #f3f3f3;
+$grey2: #e9e9e9;
+$grey3: #000000a1;
+$grey4: #8f8f8f40;
+$color: #658da6;
 
 //1 Mixins
 @mixin centerChild {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@mixin maxWidth {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
 }
 
 /* ---------------------------- Réglages généraux --------------------------- */
@@ -29,10 +47,20 @@ $black: black;
   box-sizing: border-box;
 }
 body {
-  width: 100dvw;
-  min-height: 100dvh;
-  background: red;
-  overflow: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  // Background responsive
+  background: url(../../assets/img/background-la-montagne_large.webp)
+    center/cover fixed;
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    background: url(../../assets/img/background-la-montagne_medium.webp)
+      center/cover fixed;
+  }
+  @media screen and (max-width: 425px) {
+    background: url(../../assets/img/background-la-montagne_small.webp)
+      center/cover fixed;
+  }
+  overflow-x: hidden;
 }
 li {
   list-style: none;
@@ -46,3 +74,25 @@ a:visited {
 /* -------------------------------------------------------------------------- */
 /*                      Réglages size : fluid responsive                      */
 /* -------------------------------------------------------------------------- */
+// 1 Font-size
+h1 {
+  font-size: clamp(1.8rem, calc(1.8rem + ((1vw - 0.2rem) * 2.1818)), 3rem);
+  min-height: 0vw;
+}
+h2 {
+  font-size: clamp(1rem, calc(1rem + ((1vw - 0.2rem) * 1.8182)), 2rem);
+  min-height: 0vw;
+}
+h3 {
+  font-size: clamp(0.9rem, calc(0.9rem + ((1vw - 0.2rem) * 0.5455)), 1.2rem);
+  min-height: 0vw;
+}
+p,
+a,
+.date {
+  font-size: clamp(12px, calc(0.75rem + ((1vw - 3.2px) * 0.4545)), 16px);
+  min-height: 0vw;
+}
+label {
+  font-size: clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.5455)), 0.8rem);
+}

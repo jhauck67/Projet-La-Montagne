@@ -1,0 +1,63 @@
+.section1 {
+  @include maxWidth;
+  background: $white;
+  text-align: center;
+  border-bottom: 1px solid $grey2;
+  padding: 20px 0;
+  position: relative;
+  .date {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-family: $text;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 35%;
+      @media screen and (max-width: 770px) {
+        width: 30%;
+      }
+      @media screen and (max-width: 425px) {
+        width: 20%;
+      }
+      background: $grey2;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &::before {
+      left: 0;
+    }
+    &::after {
+      right: 0;
+    }
+  }
+  h2 {
+    max-width: 600px;
+    width: 80%;
+    margin: 0 auto;
+    font-family: $title;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  p {
+    max-width: 600px;
+    width: 80%;
+    margin: 40px auto;
+    font-family: $text;
+    font-style: italic;
+    line-height: 30px;
+  }
+  .img {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

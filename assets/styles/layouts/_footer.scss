@@ -1,0 +1,60 @@
+footer {
+  @include maxWidth;
+  background: $grey2;
+  margin: 40px auto 60px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
+  label {
+    font-family: $title;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: $grey3;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    @media screen and (max-width: 700px) {
+      height: 600px;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    div {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 30% 70%;
+      border-top: 1px solid $grey4;
+      border-left: 1px solid $grey4;
+      @media screen and (max-width: 700px) {
+        border-left: none;
+      }
+
+      label {
+        padding: 0 10px;
+      }
+      p,
+      a {
+        color: $grey3;
+      }
+    }
+    .social ul {
+      display: flex;
+      align-items: center;
+      justify-items: start;
+      gap: 10px;
+      .icon {
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        a {
+          border-color: $grey3;
+          fill: $grey3;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.section2 {
+  @include maxWidth;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: $white;
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
+  .section2-left {
+    border-right: 1px solid $grey2;
+    @media screen and (max-width: 700px) {
+      border: none;
+    }
+  }
+  .card {
+    padding: 20px 0;
+    .date {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px 0;
+      font-family: $text;
+    }
+    h3 {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      font-family: $text;
+      text-transform: uppercase;
+    }
+    .img {
+      width: 80%;
+      display: block;
+      margin: 40px auto;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    p {
+      font-family: $text;
+      width: 80%;
+      margin: 0 auto;
+      line-height: 30px;
+    }
+    .div {
+      text-align: center;
+    }
+  }
+}
