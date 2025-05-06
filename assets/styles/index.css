@@ -127,6 +127,10 @@ header .header-text .text-container p {
   line-height: 20px;
   margin: 30px 0 50px;
 }
+header .header-text .text-container h1,
+header .header-text .text-container p {
+  text-shadow: 1px 2px 3px black;
+}
 
 .icon {
   width: 40px;
@@ -324,9 +328,16 @@ nav .nav-right ul li:hover svg {
   line-height: 30px;
 }
 .section1 .img {
-  width: 85%;
+  width: 60%;
+  min-width: 480px;
   display: block;
   margin: 0 auto;
+}
+@media screen and (max-width: 700px) {
+  .section1 .img {
+    width: 85%;
+    min-width: 100px;
+  }
 }
 .section1 .img img {
   width: 100%;

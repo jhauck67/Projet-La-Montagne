@@ -51,9 +51,15 @@
     line-height: 30px;
   }
   .img {
-    width: 85%;
+    width: 60%;
+    min-width: 480px;
     display: block;
     margin: 0 auto;
+    @media screen and (max-width: 700px) {
+      width: 85%;
+      min-width: 100px;
+    }
+
     img {
       width: 100%;
       height: auto;
