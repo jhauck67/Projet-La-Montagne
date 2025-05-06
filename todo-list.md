@@ -116,18 +116,18 @@
 
 ## Mise à jour du Readme.md
 
-- [ ] Remplir les premières parties du Readme
+- [x] Remplir les premières parties du Readme
 - [x] Créer un header Github Readme `assets/sketch/github-header-image.png`
 
 > On utilisera le site [Github Profile Header Générator](https://leviarista.github.io/github-profile-header-generator/)
 
-- [ ] Créer un aperçu du site
-- [ ] Créer une vidéo aperçu
-- [ ] Convertir la vidéo en GIF
+- [x] Créer un aperçu du site
+- [x] Créer une vidéo aperçu
+- [x] Convertir la vidéo en GIF
 
 ## Commit & Push sur la manche "Main"
 
-- [ ] Commit et Push les fichiers sur la branche principale "main"
+- [x] Commit et Push les fichiers sur la branche principale "main"
 
 ## Mise à jour du readme
 
