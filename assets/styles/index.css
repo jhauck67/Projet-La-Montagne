@@ -6,7 +6,7 @@
 /* ---------------------------- Import des fonts ---------------------------- */
 @font-face {
   font-family: "Inter";
-  src: url(../fonts/Inter-VariableFont_opszwght.ttf);
+  src: url(../fonts/Inter_ExtraBold.ttf);
   font-display: swap;
 }
 @font-face {
@@ -26,17 +26,28 @@
 body {
   width: 100vw;
   min-height: 100vh;
-  background: url(../../assets/img/background-la-montagne_large.webp) center/cover fixed;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  background: url(../../assets/img/background-la-montagne_large.webp) center/cover;
+}
 @media screen and (min-width: 426px) and (max-width: 768px) {
-  body {
-    background: url(../../assets/img/background-la-montagne_medium.webp) center/cover fixed;
+  body::before {
+    background: url(../../assets/img/background-la-montagne_medium.webp) center/cover;
   }
 }
 @media screen and (max-width: 425px) {
-  body {
-    background: url(../../assets/img/background-la-montagne_small.webp) center/cover fixed;
+  body::before {
+    background: url(../../assets/img/background-la-montagne_small.webp) center/cover;
   }
 }
 
