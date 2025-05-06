@@ -47,6 +47,8 @@ $color: #658da6;
   box-sizing: border-box;
 }
 body {
+  background: $black;
+  z-index: -20;
   width: 100dvw;
   min-height: 100dvh;
   scroll-behavior: smooth;
