@@ -6,7 +6,7 @@
 ![Lighthouse](https://img.shields.io/badge/Lighthouse-white?style=for-the-badge&logo=lighthouse)
 ![Performances](https://img.shields.io/badge/Performances-xx-grey) ![Accessibilité](https://img.shields.io/badge/Accessibilit%C3%A9-xx-grey) ![Bonnes Pratiques](https://img.shields.io/badge/Bonnes_pratiques-xx-grey) ![SEO](https://img.shields.io/badge/SEO-xx-grey)
 \
-<img src="" alt="Aperçu du Projet" style="width:960px; height:auto;">
+![Aperçu du projet](assets/sketch/apercu.png)
 
 # Description
 
