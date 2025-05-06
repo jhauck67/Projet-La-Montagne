@@ -1,7 +1,7 @@
 header {
   position: relative !important;
   @include maxWidth;
-  height: 100svh;
+  height: 100dvh;
   .header-text {
     height: 100%;
     @include centerChild;
