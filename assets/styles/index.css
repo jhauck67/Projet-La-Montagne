@@ -24,8 +24,8 @@
 }
 
 body {
-  width: 100dvw;
-  min-height: 100dvh;
+  width: 100svw;
+  min-height: 100svh;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -37,8 +37,8 @@ body::before {
   right: 0;
   top: 0;
   bottom: 0;
-  width: 100dvw;
-  height: 100dvh;
+  width: 100svw;
+  height: 100svh;
   z-index: -10;
   background: url(../../assets/img/background-la-montagne_large.webp) center/cover;
 }
@@ -97,7 +97,7 @@ header {
   max-width: 1200px;
   width: 85%;
   margin: 0 auto;
-  height: 100vh;
+  height: 100svh;
 }
 header .header-text {
   height: 100%;
@@ -387,7 +387,7 @@ nav .nav-right ul li:hover svg {
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  font-family: "Merri", serif;
+  font-family: "Inter", sans-serif;
   text-transform: uppercase;
 }
 .section2 .card .img {

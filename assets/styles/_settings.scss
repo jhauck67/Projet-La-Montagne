@@ -47,8 +47,8 @@ $color: #658da6;
   box-sizing: border-box;
 }
 body {
-  width: 100dvw;
-  min-height: 100dvh;
+  width: 100svw;
+  min-height: 100svh;
   scroll-behavior: smooth;
   &::before {
     content: "";
@@ -58,8 +58,8 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
-    width: 100dvw;
-    height: 100dvh;
+    width: 100svw;
+    height: 100svh;
     z-index: -10;
     background: url(../../assets/img/background-la-montagne_large.webp)
       center/cover;
