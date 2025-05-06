@@ -6,7 +6,7 @@
 /* ---------------------------- Import des fonts ---------------------------- */
 @font-face {
   font-family: "Inter";
-  src: url(../fonts/Inter-VariableFont_opszwght.ttf);
+  src: url(../fonts/Inter_ExtraBold.ttf);
   font-display: swap;
 }
 @font-face {
@@ -24,19 +24,32 @@
 }
 
 body {
-  width: 100vw;
-  min-height: 100vh;
-  background: url(../../assets/img/background-la-montagne_large.webp) center/cover fixed;
+  width: 100svw;
+  min-height: 100svh;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100svw;
+  height: 100svh;
+  z-index: -10;
+  background: url(../../assets/img/background-la-montagne_large.webp) center/cover;
+}
 @media screen and (min-width: 426px) and (max-width: 768px) {
-  body {
-    background: url(../../assets/img/background-la-montagne_medium.webp) center/cover fixed;
+  body::before {
+    background: url(../../assets/img/background-la-montagne_medium.webp) center/cover;
   }
 }
 @media screen and (max-width: 425px) {
-  body {
-    background: url(../../assets/img/background-la-montagne_small.webp) center/cover fixed;
+  body::before {
+    background: url(../../assets/img/background-la-montagne_small[!test].webp) center/cover;
   }
 }
 
@@ -84,7 +97,7 @@ header {
   max-width: 1200px;
   width: 85%;
   margin: 0 auto;
-  height: 100vh;
+  height: 100svh;
 }
 header .header-text {
   height: 100%;
@@ -103,13 +116,13 @@ header .header-text .text-container {
   color: white;
 }
 header .header-text .text-container h1 {
-  font-family: "Inter", cursive;
+  font-family: "Inter", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 2px;
 }
 header .header-text .text-container p {
-  font-family: "Merri", cursive;
+  font-family: "Merri", serif;
   font-style: italic;
   line-height: 20px;
   margin: 30px 0 50px;
@@ -197,7 +210,7 @@ nav .nav-left ul li {
           justify-content: center;
 }
 nav .nav-left ul li a {
-  font-family: "Inter", cursive;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   font-size: clamp(0.5rem, 0.5rem + (1vw - 0.2rem) * 0.5455, 0.8rem);
@@ -266,7 +279,7 @@ nav .nav-right ul li:hover svg {
   width: 80%;
   margin: 0 auto;
   padding: 40px 0;
-  font-family: "Merri", cursive;
+  font-family: "Merri", serif;
 }
 .section1 .date::after, .section1 .date::before {
   content: "";
@@ -298,7 +311,7 @@ nav .nav-right ul li:hover svg {
   max-width: 600px;
   width: 80%;
   margin: 0 auto;
-  font-family: "Inter", cursive;
+  font-family: "Inter", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
 }
@@ -306,7 +319,7 @@ nav .nav-right ul li:hover svg {
   max-width: 600px;
   width: 80%;
   margin: 40px auto;
-  font-family: "Merri", cursive;
+  font-family: "Merri", serif;
   font-style: italic;
   line-height: 30px;
 }
@@ -327,7 +340,7 @@ nav .nav-right ul li:hover svg {
   margin: 40px 0;
   border: 2px solid black;
   padding: 10px 30px;
-  font-family: "Inter", cursive;
+  font-family: "Inter", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
   -webkit-transition: 0.3s ease;
@@ -368,13 +381,13 @@ nav .nav-right ul li:hover svg {
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
-  font-family: "Merri", cursive;
+  font-family: "Merri", serif;
 }
 .section2 .card h3 {
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  font-family: "Merri", cursive;
+  font-family: "Inter", sans-serif;
   text-transform: uppercase;
 }
 .section2 .card .img {
@@ -389,7 +402,7 @@ nav .nav-right ul li:hover svg {
      object-fit: cover;
 }
 .section2 .card p {
-  font-family: "Merri", cursive;
+  font-family: "Merri", serif;
   width: 80%;
   margin: 0 auto;
   line-height: 30px;
@@ -413,7 +426,7 @@ footer {
   }
 }
 footer label {
-  font-family: "Inter", cursive;
+  font-family: "Inter", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
   color: rgba(0, 0, 0, 0.631372549);
