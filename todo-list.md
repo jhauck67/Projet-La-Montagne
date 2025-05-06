@@ -131,23 +131,23 @@
 
 ## Mise à jour du readme
 
-- [ ] Récupérer les adresses de `aperçu.png` et `video.gif`
+- [x] Récupérer les adresses de `aperçu.png` et `video.gif`
 
 ## Effectuer les tests visuels et de performances multi-plateformes
 
-- [ ] Remplir le tableau tests et vérifications dans le readme.
-- [ ] Créer des issues avec les modifications ou améliorations à apporter.
+- [x] Remplir le tableau tests et vérifications dans le readme.
+- [x] Créer des issues avec les modifications ou améliorations à apporter.
 
 ## Modifications et améliorations
 
-- [ ] Créer une nouvelle branche `git checkout -b fix:modif`
-- [ ] Faire les modifications, les tester sur live server.
-- [ ] Commit & Push les modifications
-- [ ] Faire une pull request associée à une issue
-- [ ] Merge les modifications sur la branche principale
-- [ ] Supprime la branche "fix"
-- [ ] Refaire les tests en réel
-- [ ] Mettre à jour le readme
+- [x] Créer une nouvelle branche `git checkout -b fix:modif`
+- [x] Faire les modifications, les tester sur live server.
+- [x] Commit & Push les modifications
+- [x] Faire une pull request associée à une issue
+- [x] Merge les modifications sur la branche principale
+- [x] Supprime la branche "fix"
+- [x] Refaire les tests en réel
+- [x] Mettre à jour le readme
 
 ## Quand le site est satisfaisant
 

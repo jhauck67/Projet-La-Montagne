@@ -47,8 +47,10 @@ $color: #658da6;
   box-sizing: border-box;
 }
 body {
-  width: 100svw;
-  min-height: 100svh;
+  background: $black;
+  z-index: -20;
+  width: 100dvw;
+  min-height: 100dvh;
   scroll-behavior: smooth;
   &::before {
     content: "";
@@ -58,8 +60,8 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
-    width: 100svw;
-    height: 100svh;
+    width: 100dvw;
+    height: 100dvh;
     z-index: -10;
     background: url(../../assets/img/background-la-montagne_large.webp)
       center/cover;
@@ -68,8 +70,7 @@ body {
         center/cover;
     }
     @media screen and (max-width: 425px) {
-      background: url(../../assets/img/background-la-montagne_small[!test].webp)
-        //! IMAGE TEST!
+      background: url(../../assets/img/background-la-montagne_small.webp)
         center/cover;
     }
   }
